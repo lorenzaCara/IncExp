@@ -1,0 +1,34 @@
+{
+  "uscite": [
+    {
+      "id": "2",
+      "titolo": "Bonus",
+      "data": "2025/01/15",
+      "ammontare": 500,
+      "type": "uscite"
+    },
+    {
+      "id": "6ee3",
+      "type": "uscite",
+      "titolo": "h",
+      "data": "2025-01-02",
+      "ammontare": "77"
+    }
+  ],
+  "entrate": [
+    {
+      "id": "3cf4",
+      "type": "entrate",
+      "titolo": "stipendio",
+      "data": "2025-01-08",
+      "ammontare": "320"
+    },
+    {
+      "id": "fb07",
+      "type": "entrate",
+      "titolo": "bonus",
+      "data": "2025-01-10",
+      "ammontare": "123"
+    }
+  ]
+}
