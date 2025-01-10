@@ -18,23 +18,17 @@ const DataPicker = ({ selectedDate = {}, handleDateChange = () => {} }) => {
       month: month + 1,
       year: currentYear
     }
-    if (typeof handleDateChange === 'function') {
-      handleDateChange(newDate)
-    } else {
-      console.warn('handleDateChange is not a function')
-    }
+    handleDateChange(newDate)
     setIsOpen(false)
   }
 
   const changeYear = (increment) => {
     const newYear = currentYear + increment
     setCurrentYear(newYear)
-    if (selectedDate.month && typeof handleDateChange === 'function') {
-      handleDateChange({
-        month: selectedDate.month,
-        year: newYear
-      })
-    }
+    handleDateChange({
+      month: selectedDate.month,
+      year: newYear
+    })
   }
 
   return (
@@ -86,4 +80,3 @@ const DataPicker = ({ selectedDate = {}, handleDateChange = () => {} }) => {
 }
 
 export default DataPicker
-

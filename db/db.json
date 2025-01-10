@@ -29,6 +29,13 @@
       "titolo": "bonus",
       "data": "2025-01-10",
       "ammontare": "123"
+    },
+    {
+      "id": "a414",
+      "type": "entrate",
+      "titolo": "5tt",
+      "data": "2025-01-07",
+      "ammontare": "33"
     }
   ]
 }
