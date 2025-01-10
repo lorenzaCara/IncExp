@@ -1,5 +1,3 @@
-'use client'
-
 import { useState, useEffect } from 'react';
 import AddNewModal from './AddNewModal';
 import ExpensesCard from './ExpensesCard';
@@ -67,7 +65,7 @@ const SetUp = () => {
   };
 
   const handleDelete = (id, type) => {
-    fetch(`http://localhost:3001/${type}/${id}`, { method: 'DELETE' })
+    fetch(`http://localhost:3001/${type}/${id}`, { method: 'DELETE' }) //uso template literal al posto della concatenazione (ovvero => 'http://localhost:3001/' + type + '/' + id ), perchè? Per provare
       .then(() => fetchData())
       .catch((error) => console.error('Error deleting item:', error));
   };
@@ -146,12 +144,12 @@ const SetUp = () => {
           />
         </div>
       </div>
-      <AddNewModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        item={currentItem} 
-        onSave={handleSave} 
-      />
+        <AddNewModal 
+          isOpen={isModalOpen} 
+          onClose={() => setIsModalOpen(false)} 
+          item={currentItem} 
+          onSave={handleSave} 
+        />
     </div>
   );
 };
